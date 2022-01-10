@@ -1,0 +1,121 @@
+.flex-and-align 
+  display: flex
+  align-items: center
+.header
+  position: sticky
+  top: 0
+  background: $color-header
+  height: 56px
+  justify-content: space-between
+  @extend .flex-and-align
+.logo
+  margin-left: 25px
+  svg
+    width: 120px
+    height: 56px
+.menu-1
+  @extend .flex-and-align
+  padding: 0 15px
+
+.btn
+  cursor: pointer
+  padding: 0
+  outline: none
+  padding: 7px
+  border: 1px solid rgba(80, 80, 80, 0)
+  background: transparent
+  width: 41px
+  height: 41px
+  border-radius: 22px
+  svg
+    width: 24px
+    height: 24px
+    fill: white
+  &:active
+    border-radius: 22px
+    border: 1px solid rgba(80, 80, 80, 0.884)
+    background: #313131
+  &:focus
+    outline: none
+
+.menu-2
+  @extend .flex-and-align
+  .search-btn
+    background: #303030
+    border: none
+    width: 64px
+    height: 40px
+    border-radius: 0 2px 2px 0
+    svg
+      fill: white
+      margin: 0 auto
+      width: 24px
+      height: 24px
+
+  .search-menu
+    margin-right: 10px
+    @extend .flex-and-align
+    .search
+      background: #121212
+      // border: 1px solid #065fd4
+      padding: 2px 6px
+      height: 40px
+      border-radius: 2px 0 0 2px
+      border: 1px solid #303030
+      @extend .flex-and-align
+      input
+        width: 527px
+        height: 100%
+        background: #121212
+        border: 0
+        color: #ffffffdc
+        font-weight: 500
+        font-size: 1.0rem
+        &:focus
+          outline: 0
+        &::placeholder
+          font-weight: normal
+          color: #828282
+          font-size: 1.0rem
+      .keyboard-btn
+        width: 27px
+        height: 24px
+        background: transparent
+        border: none
+        padding: 0
+        margin: 0
+        svg
+          width: 20px
+          color: #a0a0a0
+
+.menu-3
+
+.btn-login
+  border: 1px solid gray
+  border-radius: 3px
+  background: transparent
+  cursor: pointer
+  margin-right: 20px
+  padding: 5px 8px
+  
+  div
+    @extend .flex-and-align
+    svg
+      width: 24px
+      height: 24px
+      fill: gray
+      margin-right: 5px
+    span
+      font-size: 1rem
+      text-transform: uppercase
+      color: gray
+  &:hover
+    border: 1px solid orange
+    div
+      svg
+        fill: rgba(198, 211, 12, 0.911)
+      span
+        color: rgba(198, 211, 12, 0.89)
+
+.btn-active
+  background: #181818

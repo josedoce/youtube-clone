@@ -1,0 +1,193 @@
+body {
+  background: #181818;
+  color: white;
+  font-size: 10px; }
+
+.content {
+  padding-left: 72px; }
+
+.flex-and-align, .header, .menu-1, .menu-2, .menu-2 .search-menu, .menu-2 .search-menu .search, .btn-login div, .nav .nav-menu li a {
+  display: flex;
+  align-items: center; }
+
+.header {
+  position: sticky;
+  top: 0;
+  background: rgba(33, 33, 33, 0.98);
+  height: 56px;
+  justify-content: space-between; }
+
+.logo {
+  margin-left: 25px; }
+  .logo svg {
+    width: 120px;
+    height: 56px; }
+
+.menu-1 {
+  padding: 0 15px; }
+
+.btn {
+  cursor: pointer;
+  padding: 0;
+  outline: none;
+  padding: 7px;
+  border: 1px solid rgba(80, 80, 80, 0);
+  background: transparent;
+  width: 41px;
+  height: 41px;
+  border-radius: 22px; }
+  .btn svg {
+    width: 24px;
+    height: 24px;
+    fill: white; }
+  .btn:active {
+    border-radius: 22px;
+    border: 1px solid rgba(80, 80, 80, 0.884);
+    background: #313131; }
+  .btn:focus {
+    outline: none; }
+
+.menu-2 .search-btn {
+  background: #303030;
+  border: none;
+  width: 64px;
+  height: 40px;
+  border-radius: 0 2px 2px 0; }
+  .menu-2 .search-btn svg {
+    fill: white;
+    margin: 0 auto;
+    width: 24px;
+    height: 24px; }
+.menu-2 .search-menu {
+  margin-right: 10px; }
+  .menu-2 .search-menu .search {
+    background: #121212;
+    padding: 2px 6px;
+    height: 40px;
+    border-radius: 2px 0 0 2px;
+    border: 1px solid #303030; }
+    .menu-2 .search-menu .search input {
+      width: 527px;
+      height: 100%;
+      background: #121212;
+      border: 0;
+      color: #ffffffdc;
+      font-weight: 500;
+      font-size: 1rem; }
+      .menu-2 .search-menu .search input:focus {
+        outline: 0; }
+      .menu-2 .search-menu .search input::placeholder {
+        font-weight: normal;
+        color: #828282;
+        font-size: 1rem; }
+    .menu-2 .search-menu .search .keyboard-btn {
+      width: 27px;
+      height: 24px;
+      background: transparent;
+      border: none;
+      padding: 0;
+      margin: 0; }
+      .menu-2 .search-menu .search .keyboard-btn svg {
+        width: 20px;
+        color: #a0a0a0; }
+
+.btn-login {
+  border: 1px solid gray;
+  border-radius: 3px;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 5px 8px; }
+  .btn-login div svg {
+    width: 24px;
+    height: 24px;
+    fill: gray;
+    margin-right: 5px; }
+  .btn-login div span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: gray; }
+  .btn-login:hover {
+    border: 1px solid orange; }
+    .btn-login:hover div svg {
+      fill: rgba(198, 211, 12, 0.911); }
+    .btn-login:hover div span {
+      color: rgba(198, 211, 12, 0.89); }
+
+.btn-active {
+  background: #181818; }
+
+.nav {
+  width: 72px;
+  background: rgba(33, 33, 33, 0.98);
+  position: fixed;
+  height: 100vh; }
+  .nav .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .nav .nav-menu li {
+      width: 100%;
+      height: 74px; }
+      .nav .nav-menu li a {
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        text-decoration: none; }
+        .nav .nav-menu li a:hover {
+          background: #666; }
+        .nav .nav-menu li a div svg {
+          margin: 0 auto;
+          width: 24px;
+          height: 24px;
+          fill: white;
+          margin-bottom: 6px; }
+        .nav .nav-menu li a div span {
+          color: white;
+          font-size: 1em; }
+
+.scroll-options {
+  border-top: 1px solid #424141;
+  border-bottom: 1px solid #424141;
+  background: rgba(33, 33, 33, 0.98);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 56px;
+  overflow-x: auto;
+  overflow-x: hidden;
+  list-style: none; }
+  .scroll-options li {
+    max-width: 20rem;
+    margin: 0 5px;
+    height: 32px; }
+
+.btn-options {
+  display: block;
+  background: #373737;
+  color: white;
+  border-radius: 20px;
+  padding: 0 12px;
+  border: 1px solid #535353;
+  font-size: 17px;
+  width: 100%;
+  height: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none; }
+
+.videos {
+  padding-top: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; }
+
+.video-img {
+  object-fit: contain;
+  width: 100%; }
+
+/*# sourceMappingURL=index.css.map */
